@@ -316,7 +316,7 @@ public:
       vector<string> vString;
 
       short pos = 0;
-      string sWord; // define a string variable  
+      string sWord = ""; // define a string variable  
 
       // use find() function to get the position of the delimiters  
       while ((pos = S1.find(Delim)) != std::string::npos)

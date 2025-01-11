@@ -1,4 +1,3 @@
-#pragma once
 #include <iostream>
 #include <string>
 #include <limits>   
@@ -66,6 +65,17 @@ public:
 		return false;
 	}
 
+	static float ReadfloatNumber(string ErrorMessage = "Invalid Number, Enter again\n")
+	{
+		float Number;
+		while (!(cin >> Number)) {
+			cin.clear();
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
+			cout << ErrorMessage ;
+		}
+		return Number;
+	}
+	
 	static int ReadIntNumber(string ErrorMessage="Invalid Number, Enter again\n")
 	{
 		int Number;
@@ -114,6 +124,15 @@ public:
 	static bool IsValideDate(clsDate Date)
 	{
 		return	clsDate::IsValidDate(Date);
+	}
+
+	static string ReadString()
+	{
+		string str = "";
+
+		getline(cin >> ws ,str);
+
+		return (str);
 	}
 
 };
