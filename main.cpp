@@ -1,18 +1,22 @@
 #include <iostream>
-#include "clsBankClient.h"
+#include "clsLoginScreen.h"
+
+#include "clsCurrency.h"
 
 using namespace std;
 
 int main() 
 {
-	clsBankClient Client = clsBankClient::Find("A101");
 
-	Client.Print();
+	//clsMainMenueScreen::_ShowMainMenue();
+	while(1)
+	{
+		if(clsLoginScreen::ShowLogin())
+		{
+			break;
+		}
+	}
 
-	clsBankClient Client2 = clsBankClient::Find("A1028");
 
-	Client2.Print();
-
-	cout << clsBankClient::IsClientexist("A102");
 
 }

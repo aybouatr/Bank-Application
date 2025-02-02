@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <string>
 #include <limits>   
@@ -32,6 +33,17 @@ public:
 			return true;
 		else
 			return false;
+	}
+
+	static float ReadFloatNumber(string ErrorMessage="Invalid Number, Enter again\n")
+	{
+		float Number = 6;
+		while (!(cin >> Number)) {
+			cin.clear();
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
+			cout << ErrorMessage ;
+		}
+		return Number;
 	}
 
 	static bool IsNumberBetween(double Number, double From, double To)
@@ -78,7 +90,7 @@ public:
 	
 	static int ReadIntNumber(string ErrorMessage="Invalid Number, Enter again\n")
 	{
-		int Number;
+		int Number = 6;
 		while (!(cin >> Number)) {
 			cin.clear();
 			cin.ignore(numeric_limits<streamsize>::max(), '\n');
