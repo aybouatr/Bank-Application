@@ -1,6 +1,5 @@
 #include "clsScreen.h"
-//#include "clsInputValidate.h"
-//#include "clsBankClient.h"
+
 
 using namespace std;
 
