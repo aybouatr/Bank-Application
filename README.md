@@ -49,9 +49,8 @@ Upon startup, the application loads a list of users from a file (e.g., `users.tx
 **Sample users you can log in with:**
 
 ```
-username: alice   password: alice123
-username: bob     password: bobpass
-username: admin   password: admin42
+username: Rout   password: 1111
+username: Voss     password: 1133
 ```
 
 (These users/passwords are samples—check the `users.txt` file in the repository for the latest credentials.)
