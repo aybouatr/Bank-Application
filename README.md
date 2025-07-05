@@ -95,8 +95,8 @@ After logging in, users can:
 ## Example Usage
 
 1. **Login with a sample user:**
-    - Username: `alice`
-    - Password: `alice123`
+    - Username: `Rout`
+    - Password: `1111`
 
 2. **Menu Options:**
     - 1) Check balance
